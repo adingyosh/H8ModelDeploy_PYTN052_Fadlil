@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body bgcolor=#d4a3ae>
+   <div class="form">
+    <center>
+      <h1>Linear Regression Model for House Price in USA</h1><br>
+
+      <form method='POST', action={{url_for('predict')}}>
+       <b>
+        <input
+          type="text"
+          name="bedrooms"
+          placeholder="Bedrooms"
+          required="required"
+        /> <br><br>
+        <input
+          type="text"
+          name="bathrooms"
+          placeholder="Bathrooms"
+          required="required"
+        /><br><br>
+        <input
+          type="text"
+          name="sqft_living"
+          placeholder="Sqft_living"
+          required="required"
+        /><br><br>
+        <input
+          type="text"
+          name="sqft_lot"
+          placeholder="Sqft_lot"
+          required="required"
+        /><br><br>
+        <input
+          type="text"
+          name="floors"
+          placeholder="Floors"
+          required="required"
+        /><br><br>
+        <input
+          type="text"
+          name="sqft_above"
+          placeholder="Sqft_above"
+          required="required"
+        /><br><br>
+          <input
+          type="text"
+          name="sqft_basement"
+          placeholder="Sqft_basement"
+          required="required"
+        /><br><br>
+      </b>
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          Predict
+        </button>
+      
+      </center>  
+    </div>    
+  </body>
+</html>
